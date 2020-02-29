@@ -1,4 +1,4 @@
-# What's these codes?
+# What are these codes?
 These codes ara test framework for django application by nginx.
 
 Please run below codes if you want to try it.
