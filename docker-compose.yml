@@ -29,9 +29,9 @@ services:
 
   python:
       build: ./python
-      command: python ./manage.py makemigrations
-      command: python ./manage.py migrate
       command: uwsgi --socket :8001 --module app.wsgi --py-autoreload 1 --logto /tmp/mylog.log
+      command: python ./manage.py makemigrations prediction
+      command: python ./manage.py migrate
       volumes:
         - ./src:/code
         - ./static:/static
