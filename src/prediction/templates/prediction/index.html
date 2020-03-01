@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+<head>
+    <title>言語判別AI入力画面</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <script type="text/javascript" src="{% static 'js/jquery-3.4.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        <h3 class="bg-primary container">AI言語判別</h3><br>
+        <h5>あなたの名前が何語に由来するかをAIが判別します</h5><br>
+        <div class="well">
+           <h5>ローマ字で名前を入力して下さい</h5>
+            <div class="form-group">
+                <form action="{% url 'result' %}" method="post" class="form-inline">
+                    {% csrf_token %}
+                    {{ name_form }}
+                    <input type="submit" value="送信する" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
