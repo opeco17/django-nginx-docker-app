@@ -10,15 +10,14 @@ services:
         - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
         - ./static:/static
       depends_on:
-        - python
+        - application
 
-  python:
-      build: ./python
-      command: python manage.py makemigrations prediction
-      command: python manage.py migrate 
+  application:
+      build: ./src
       command: uwsgi --socket :8001 --module app.wsgi --py-autoreload 1 --logto /tmp/mylog.log
       volumes:
         - ./src:/code
         - ./static:/static
       expose:
         - "8001"
+
