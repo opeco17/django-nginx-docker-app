@@ -27,9 +27,6 @@ git clone https://github.com/opeco17/language-prediction-application.git
 ```
 These below commands are for setting up the application.
 ```
-git clone https://github.com/opeco17/django-nginx-docker-app.git
-```
-```
 docker-compose run application ./manage.py makemigrations prediction
 ```
 ```
