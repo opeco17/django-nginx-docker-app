@@ -1,8 +1,31 @@
-# What are these codes?
-These codes ara test framework for django application by nginx.
+# Language Prediction Application
+This is the machine learning application which predicts what language your name comes from.
 
-Please run below codes if you want to try it.
+<img src="https://user-images.githubusercontent.com/46510874/74896505-cc5de100-53d7-11ea-814c-be00277a4354.png" width="80%">
 
+<img src="https://user-images.githubusercontent.com/46510874/74896471-b3553000-53d7-11ea-82e6-384a530a29c4.png" width="80%">
+
+
+# Development Envilonment
+
+-ServerSide : Django
+
+-FrontEnd : Bootstrap
+
+-MachineLeaning : PyTorch
+
+-DataBase : SQLite
+
+-WebServer : Nginx
+
+-AppServer : uWSGI
+
+# How to use (use Docker)
+Clone files from GitHub.
+```
+git clone https://github.com/opeco17/language-prediction-application.git
+```
+These below commands are for setting up the application.
 ```
 git clone https://github.com/opeco17/django-nginx-docker-app.git
 ```
@@ -15,16 +38,10 @@ docker-compose run application ./manage.py migrate
 ```
 docker-compose run application ./manage.py collectstatic
 ```
+Build docker image and run docker container. Please execute command on the place where Dockerfile exists.
 ```
 docker-compose up -d
 ```
+Please jump to below link and you will see above GUI.
 
-# Development Environment
-
-Application : Django
-
-App Server : uWSGI
-
-Web Server : Nginx
-
-Container : Docker
+http://localhost:8000/
