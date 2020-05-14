@@ -20,7 +20,7 @@ This is the machine learning application which predicts what language your name 
 
 -AppServer : uWSGI
 
-# How to use (use Docker)
+# How to use 
 Clone files from GitHub.
 ```
 git clone https://github.com/opeco17/language-prediction-application.git
