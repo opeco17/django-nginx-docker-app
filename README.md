@@ -6,19 +6,9 @@ This is the machine learning application which predicts what language your name 
 <img src="https://user-images.githubusercontent.com/46510874/74896471-b3553000-53d7-11ea-82e6-384a530a29c4.png" width="80%">
 
 
-# Development Envilonment
+# Technologies
 
--ServerSide : Django
-
--FrontEnd : Bootstrap
-
--MachineLeaning : PyTorch
-
--DataBase : SQLite
-
--WebServer : Nginx
-
--AppServer : uWSGI
+Python/Django/PyTorch/SQLite/Nginx/uWSGI
 
 # How to use 
 Clone files from GitHub.
