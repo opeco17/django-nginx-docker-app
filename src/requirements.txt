@@ -1,6 +1,6 @@
 Django==2.2.10
 uwsgi==2.0.17
 PyMySQL==0.8.0
-numpy==1.17.2
+numpy==1.22.0
 torch==1.4.0
 
